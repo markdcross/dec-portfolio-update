@@ -1,0 +1,109 @@
+<!-- NAV BAR -->
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <!-- TODO Update logo and fix path -->
+      <img
+        class="masthead-brand"
+        src="./assets/images/logo.png"
+        alt="Mark's logo"
+      />
+      <nav class="nav nav-masthead justify-content-center">
+        <!-- TODO Update links w/ res.render -->
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+        <a
+          class="nav-link"
+          href="https://drive.google.com/file/d/1s8e7U0Im9T7QM-llLo9dkJ3AbRxdPTBY/view?usp=sharing"
+          target="_blank"
+          >Resume</a
+        >
+        <a
+          class="nav-link"
+          id="contactBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+          href="#"
+          >Contact</a
+        >
+        <!-- CONTACT MODAL -->
+        <div class="modal" id="contactModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Give me a shout</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Email: markdcross@gmail.com <br />
+                  Phone: 410.271.3079 <br />
+                  My Calendly:
+                  <a
+                    href="https://calendly.com/markdcross/15min"
+                    target="_blank"
+                    class="calendly"
+                    >Put time on my calendar by clicking here</a
+                  ><br />
+                </p>
+                <form name="contact" method="POST" data-netlify="true">
+                  <div class="form-group">
+                    <label for="formName">Name</label>
+                    <input type="text" class="form-control" id="formName" />
+                  </div>
+                  <div class="form-group">
+                    <label for="formEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="formEmail"
+                      aria-describedby="emailHelp"
+                    />
+                    <small id="emailHelp" class="form-text"
+                      >I'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="formMessage">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="formMessage"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://github.com/markdcross"
+          target="_blank"
+          class="githubBtn button ctcLinks"
+        >
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/markdcross/"
+          target="_blank"
+          class="githubBtn button ctcLinks"
+        >
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </a>
+      </nav>
+    </div>
+  </header>
+</div>
