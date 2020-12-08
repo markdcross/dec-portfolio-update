@@ -8,140 +8,21 @@
 
     <main role="main" class="inner cover">
       <!-- Landing  -->
-      <article id="heroDiv">
-        <h1 class="cover-heading" id="imMark">Hi. I'm Mark.</h1>
-        <h2 class="lead" id="subHeading">
-          Full Stack Developer. Sales Leader. <br />
-          Killer Haircut.
-        </h2>
-        <h3 class="lead" id="getToKnowMe">
-          Get to know me below.
-          <i
-            class="far fa-hand-point-down animate__animated animate__bounce animate__delay-5s"
-          ></i>
-          <br />
-          Check out my work and get in touch above.
-          <i
-            class="far fa-hand-point-up animate__animated animate__bounce animate__delay-5s"
-          ></i>
-        </h3>
-      </article>
+      <%- include('../partials/landing'); %>
 
       <!-- Headshot & Bio -->
-      <div class="container-fluid hide indexTabs" id="introDiv">
-        <div class="row">
-          <article class="col-md-12">
-            <figure class="image is-1x1">
-              <img id="headshot" src="img/headshot.png" />
-              <div id="introContent">
-                <p class="title">Who is that handsome devil?</p>
-                <p id="bioText">
-                  I'm Mark Cross and I'm enrolled in the University of Richmond
-                  Coding Bootcamp. Born and raised in Annapolis, MD, graduate of
-                  the University of Delaware (go Blue Hens 🐓), and now Richmond
-                  local. I've spent my career in sales and sales leadership,
-                  having recently served as the head of sales for Richmond-based
-                  startup,
-                  <a href="https://www.edconnective.com/">EdConenctive</a>.
-                </p>
-              </div>
-            </figure>
-          </article>
-        </div>
-      </div>
+      <%- include('../partials/bio'); %>
 
       <!-- Tech Stack -->
-      <div class="container hide indexTabs" id="stackDiv">
-        <div class="row">
-          <article class="col-md-4 stackContent content">
-            <h1 class="title">Languages & Frameworks</h1>
-            <h3 class="subtitle">Dream it</h3>
-            <div class="content">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="col-md-4 stackContent content">
-            <h1 class="title">Tools & Libraries</h1>
-            <h3 class="subtitle">Build it</h3>
-            <div class="content">
-              <!-- Content -->
-              <ul>
-                <li>Git & GitHub</li>
-                <li>Bootstrap/Bulma/Materialize</li>
-                <li>jQuery/AJAX</li>
-                <li>Node.js/Express/Sequelize</li>
-                <li>MySql</li>
-                <li>Jest/Mocha</li>
-                <li>Postman</li>
-                <li>Heroku/Netlify</li>
-              </ul>
-            </div>
-          </article>
-          <article class="col-md-4 stackContent content">
-            <h1 class="title">Sales & Operations</h1>
-            <h3 class="subtitle">Monetize it</h3>
-            <div class="content">
-              <!-- Content -->
-              <ul>
-                <li>Solutions Selling</li>
-                <li>Challenger Selling</li>
-                <li>Lean Six Sigma Yellow Belot</li>
-                <li>Salesforce.com & Pipedrive CRM</li>
-                <li>Outreach.io & SalesLoft</li>
-                <li>Marketing automation platforms</li>
-                <li>Sales enablement platforms</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
+      <%- include('../partials/stack'); %>
 
       <!-- Brewing -->
-      <div class="container hide indexTabs" id="brewDiv">
-        <h1>Coming soon:</h1>
-        <ul>
-          <li>What I'm brewing</li>
-          <li>Untapped/Vivino APIs</li>
-          <li>Goings on in RVA brewing</li>
-        </ul>
-      </div>
+      <%- include('../partials/brewing'); %>
     </main>
-    <!-- FOOTER -->
-    <footer class="footer mt-auto py-3">
-      <ul class="container nav nav-pills nav-justified">
-        <li class="nav-item">
-          <a id="introBtn" href="#">
-            <span class="icon is-small"
-              ><i class="fas fa-user-secret" aria-hidden="true"></i
-            ></span>
-            <span>Who is this guy?</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="stackBtn" href="#">
-            <span class="icon is-small"
-              ><i class="fas fa-laptop-code" aria-hidden="true"></i
-            ></span>
-            <span>Tech Stack</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="brewBtn" href="#">
-            <span class="icon is-small"
-              ><i class="fas fa-beer" aria-hidden="true"></i
-            ></span>
-            <span>Brewing</span>
-          </a>
-        </li>
-      </ul>
-    </footer>
+    <!-- Nav Pills -->
+    <%- include('../partials/pills'); %>
 
+    <!-- Footer -->
     <footer><%- include('../partials/footer'); %></footer>
   </body>
 </html>

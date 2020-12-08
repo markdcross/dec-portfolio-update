@@ -3,7 +3,6 @@ $(document).ready(function () {
   //* Nodemailer
   //* =============================
   $('form').on('submit', (e) => {
-
     const formName = $('#formName').val().trim();
     const formEmail = $('#formEmail').val().trim();
     const formMessage = $('#formMessage').val().trim();
@@ -26,7 +25,6 @@ $(document).ready(function () {
   setTimeout(getToKnow, 4000);
 
   // Index footer-nav click events
-  // TODO Update these as EJS partials
   $('#introBtn').click(function () {
     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
     $('#heroDiv').addClass('hide');
