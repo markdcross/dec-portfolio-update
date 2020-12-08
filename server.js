@@ -4,10 +4,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const routes = require('./routes/index')
-
+const nodemailer = require('nodemailer');
 const app = express();
-
 
 //* =================================
 //* EJS
@@ -16,11 +14,12 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Body Parser
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 // Set static folder
 app.use(express.static(process.cwd() + '/public'));
 
-routes(app);
+require('./routes/index')(app);
 
 const PORT = process.env.PORT || 4040;
 

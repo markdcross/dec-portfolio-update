@@ -53,7 +53,8 @@
                     >Put time on my calendar by clicking here</a
                   ><br />
                 </p>
-                <form name="contact" method="POST" data-netlify="true">
+      <!-- TODO Add form validation -->
+                <form name="contact">
                   <div class="form-group">
                     <label for="formName">Name</label>
                     <input type="text" class="form-control" id="formName" />
@@ -78,7 +79,7 @@
                       rows="3"
                     ></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" id="contactSubmit">Submit</button>
                 </form>
               </div>
             </div>

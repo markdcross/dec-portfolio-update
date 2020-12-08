@@ -1,10 +1,32 @@
 $(document).ready(function () {
-  //* ---------------------
+  //* =============================
+  //* Nodemailer
+  //* =============================
+  $('form').on('submit', (e) => {
+
+    const formName = $('#formName').val().trim();
+    const formEmail = $('#formEmail').val().trim();
+    const formMessage = $('#formMessage').val().trim();
+
+    const data = {
+      formName,
+      formEmail,
+      formMessage
+    };
+
+    $.post('/contact', data, function () {
+      console.log('Server received our data');
+    });
+  });
+  //* =============================
   //* Index
-  //* ---------------------
+  //* =============================
+  // Intro animation timing
   setTimeout(introduce, 2000);
   setTimeout(getToKnow, 4000);
 
+  // Index footer-nav click events
+  // TODO Update these as EJS partials
   $('#introBtn').click(function () {
     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
     $('#heroDiv').addClass('hide');
