@@ -14,7 +14,7 @@ $(document).ready(function () {
       formMessage
     };
 
-    $.ajax('/contact', data, function () {
+    $.post('/contact', data, function () {
       console.log('Server received our data');
       e.target.reset();
       $('#contactModal').modal('hide');
