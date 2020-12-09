@@ -14,22 +14,11 @@ $(document).ready(function () {
       formMessage
     };
 
-    $.ajax({
-      url: '/contact',
-      type: 'POST',
-      headers: { Accept: 'application/json;' },
-      data: data
-    }).done((res) => {
+    $.ajax('/contact', data, function () {
       console.log('Server received our data');
       e.target.reset();
       $('#contactModal').modal('hide');
     });
-
-    // ('/contact', data, function () {
-    //   console.log('Server received our data');
-    //   e.target.reset();
-    //   $('#contactModal').modal('hide');
-    // });
   });
   //* =============================
   //* Index

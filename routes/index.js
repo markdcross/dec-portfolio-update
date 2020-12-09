@@ -1,5 +1,6 @@
 module.exports = (app) => {
   const nodemailer = require('nodemailer');
+  const sgTransport = require('nodemailer-sendgrid-transport');
   //* =============================
   //* HTML
   //* =============================
@@ -19,14 +20,13 @@ module.exports = (app) => {
   // POST route from contact form
   app.post('/contact', (req, res) => {
     // Instantiate the SMTP server
-    const smtpTrans = nodemailer.createTransport({
-      service: 'Gmail',
-      auth: {
-        user: process.env.myEmailUser,
-        pass: process.env.myEmailPass
-      }
-    });
-
+    const smtpTrans = nodemailer.createTransport(
+      sgTransport({
+        auth: {
+          api_key: process.env.ADMIN_EMAIL_API_KEY
+        }
+      })
+    );
     // Specify what the email will look like
     const mailOpts = {
       from: req.body.formEmail, // This is ignored by Gmail
