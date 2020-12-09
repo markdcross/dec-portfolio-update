@@ -24,7 +24,7 @@ module.exports = (app) => {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.myEmailUser,
+        user: process.env.myEmail,
         pass: process.env.myEmailPass
       }
     });
