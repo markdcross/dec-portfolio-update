@@ -2,7 +2,8 @@ $(document).ready(function () {
   //* =============================
   //* Nodemailer
   //* =============================
-  $('form').on('submit', (e) => {
+  $('#contactForm').on('submit', (e) => {
+    e.preventDefault();
     const formName = $('#formName').val().trim();
     const formEmail = $('#formEmail').val().trim();
     const formMessage = $('#formMessage').val().trim();
@@ -15,6 +16,8 @@ $(document).ready(function () {
 
     $.post('/contact', data, function () {
       console.log('Server received our data');
+      e.target.reset();
+      $('#contactModal').modal('hide');
     });
   });
   //* =============================

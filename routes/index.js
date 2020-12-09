@@ -40,8 +40,8 @@ module.exports = (app) => {
       if (error) {
         return console.log(error);
       }
-
       console.log('Message sent: ' + info.response);
+      res.status(200).end();
     });
   });
 };
