@@ -20,9 +20,7 @@ module.exports = (app) => {
   app.post('/contact', (req, res) => {
     // Instantiate the SMTP server
     const smtpTrans = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
+      service: 'Gmail',
       auth: {
         user: process.env.myEmail,
         pass: process.env.myEmailPass
