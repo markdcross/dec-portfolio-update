@@ -14,11 +14,21 @@ $(document).ready(function () {
       formMessage
     };
 
-    $.post('/contact', data, function () {
+    $.ajax({
+      url: '/contact',
+      method: 'POST',
+      data: data
+    }).then(() => {
       console.log('Server received our data');
       e.target.reset();
       $('#contactModal').modal('hide');
     });
+
+    // ('/contact', data, function () {
+    //   console.log('Server received our data');
+    //   e.target.reset();
+    //   $('#contactModal').modal('hide');
+    // });
   });
   //* =============================
   //* Index
