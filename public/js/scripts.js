@@ -16,9 +16,10 @@ $(document).ready(function () {
 
     $.ajax({
       url: '/contact',
-      method: 'POST',
+      type: 'POST',
+      headers: { Accept: 'application/json;' },
       data: data
-    }).then(() => {
+    }).done((res) => {
       console.log('Server received our data');
       e.target.reset();
       $('#contactModal').modal('hide');
