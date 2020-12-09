@@ -2,7 +2,7 @@ $(document).ready(function () {
   //* =============================
   //* Nodemailer
   //* =============================
-  $('#contactSubmit').on('click', (e) => {
+  $('form').on('submit', (e) => {
     const formName = $('#formName').val().trim();
     const formEmail = $('#formEmail').val().trim();
     const formMessage = $('#formMessage').val().trim();

@@ -1,6 +1,5 @@
-const nodemailer = require('nodemailer');
-
 module.exports = (app) => {
+  const nodemailer = require('nodemailer');
   //* =============================
   //* HTML
   //* =============================
@@ -15,6 +14,7 @@ module.exports = (app) => {
 
   //* =============================
   //* Nodemailer
+  // TODO Debug - Gmail only works on chrome, yahoo doesnt work at all
   //* =============================
   // POST route from contact form
   app.post('/contact', (req, res) => {
@@ -22,7 +22,7 @@ module.exports = (app) => {
     const smtpTrans = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: process.env.myEmail,
+        user: process.env.myEmailUser,
         pass: process.env.myEmailPass
       }
     });
