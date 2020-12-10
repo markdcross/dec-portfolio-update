@@ -56,36 +56,13 @@ html {
 
 /* Header */
 
-.masthead {
+.navbar {
   margin-bottom: 2rem;
 }
 
-.masthead-brand {
-  margin-bottom: 0;
+.navbar-brand {
   height: 6rem;
   border-radius: 25%;
-  margin-left: 4rem;
-  margin-top: 2rem;
-}
-.nav-masthead {
-  margin-right: 4rem;
-  margin-top: 2rem;
-}
-.nav-masthead .nav-link {
-  padding: 0.25rem 0;
-  font-weight: 700;
-  color: #000426;
-  background-color: transparent;
-  border-bottom: 0.25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: #000426;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
 }
 
 #contactModal {
@@ -220,7 +197,7 @@ footer span {
     max-width: 25%;
     margin-bottom: 1rem;
   }
-  .masthead-brand {
+  .navbar-brand {
     display: none;
   }
 }

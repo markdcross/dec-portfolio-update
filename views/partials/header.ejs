@@ -1,10 +1,24 @@
-<!-- NAV BAR -->
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <img class="masthead-brand" src="img/logo.png" alt="Mark's logo" />
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="/">Home</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <img class="navbar-brand" src="img/logo.png" alt="Mark's logo" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse nav-masthead justify-content-end"
+      id="navbarToggler"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="nav-link" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/portfolio">Portfolio</a>
         <a
           class="nav-link"
@@ -20,91 +34,91 @@
           href="#"
           >Contact</a
         >
-        <!-- CONTACT MODAL -->
-        <div class="modal" id="contactModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Give me a shout</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  Email: markdcross@gmail.com <br />
-                  Phone: 410.271.3079 <br />
-                  My Calendly:
-                  <a
-                    href="https://calendly.com/markdcross/15min"
-                    target="_blank"
-                    class="calendly"
-                    >Put time on my calendar by clicking here</a
-                  ><br />
-                </p>
-                <!-- TODO Add form validation -->
-                <form name="contact" id="contactForm">
-                  <div class="form-group">
-                    <label for="formName">Name</label>
-                    <input type="text" class="form-control" id="formName" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formEmail">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="formEmail"
-                      aria-describedby="emailHelp"
-                    />
-                    <small id="emailHelp" class="form-text"
-                      >I'll never share your email with anyone else.</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="formMessage">Message</label>
-                    <textarea
-                      class="form-control"
-                      id="formMessage"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    id="contactSubmit"
+      </ul>
+      <!-- CONTACT MODAL -->
+      <div class="modal" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Give me a shout</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Email: markdcross@gmail.com <br />
+                Phone: 410.271.3079 <br />
+                Calendly:
+                <a
+                  href="https://calendly.com/markdcross/15min"
+                  target="_blank"
+                  class="calendly"
+                  >Put time on my calendar</a
+                ><br />
+              </p>
+              <!-- TODO Add form validation -->
+              <form name="contact" id="contactForm">
+                <div class="form-group">
+                  <label for="formName">Name</label>
+                  <input type="text" class="form-control" id="formName" />
+                </div>
+                <div class="form-group">
+                  <label for="formEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="formEmail"
+                    aria-describedby="emailHelp"
+                  />
+                  <small id="emailHelp" class="form-text"
+                    >I'll never share your email with anyone else.</small
                   >
-                    Submit
-                  </button>
-                </form>
-              </div>
+                </div>
+                <div class="form-group">
+                  <label for="formMessage">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="formMessage"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="contactSubmit"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
-
-        <a
-          href="https://github.com/markdcross"
-          target="_blank"
-          class="githubBtn button ctcLinks"
-        >
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/markdcross/"
-          target="_blank"
-          class="githubBtn button ctcLinks"
-        >
-          <span class="icon">
-            <i class="fab fa-linkedin"></i>
-          </span>
-        </a>
-      </nav>
+      </div>
+      <!-- /Modal -->
+      <a
+        href="https://github.com/markdcross"
+        target="_blank"
+        class="githubBtn button ctcLinks"
+      >
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/markdcross/"
+        target="_blank"
+        class="githubBtn button ctcLinks"
+      >
+        <span class="icon">
+          <i class="fab fa-linkedin"></i>
+        </span>
+      </a>
     </div>
-  </header>
-</div>
+  </div>
+</nav>
