@@ -27,7 +27,7 @@
 body,
 html {
   display: grid;
-  color: #000426;
+  color: #163840;
   background-image: url(./../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,11 +58,16 @@ html {
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
 }
-
+.projBtn {
+  background-color: #163840;
+  color: white;
+}
 .modal-content {
   background-color: #f2d5bb;
 }
-
+#contactSubmit {
+  background-color: #163840;
+}
 .inner {
   font-size: 1rem;
 }
@@ -109,7 +114,7 @@ html {
 h1,
 h2,
 h3 {
-  color: #000426;
+  color: #163840;
 }
 
 /* Stack */
@@ -137,24 +142,24 @@ article ul {
   justify-content: center;
 }
 footer span {
-  color: #000426;
+  color: #163840;
 }
 
 /* -------------------
 * Portfolio
 ------------------- */
 .portfolioHeader {
-  color: #000426;
+  color: #163840;
   text-align: center;
 }
 .card {
-  color: #000426;
+  color: #163840;
   box-shadow: inset 0 0 5rem #f2d5bb;
   border: 1px solid #f2d5bb;
 }
 
 .card-text a {
-  color: #000426;
+  color: #f2d5bb;
 }
 .card-footer {
   text-align: center;
