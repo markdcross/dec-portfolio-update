@@ -87,15 +87,6 @@ html {
   color: #000426;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
 /* Cover */
 .cover {
   display: grid;
@@ -152,8 +143,13 @@ article ul {
   background-color: #f2d5bb;
   padding: 1rem 0;
   border-radius: 2rem;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
-
+.nav-pills {
+  justify-content: center;
+}
 footer span {
   color: #000426;
 }
@@ -187,11 +183,16 @@ footer span {
   margin-top: 2rem;
 }
 
+.nav-pill:hover {
+  cursor: pointer;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   #introContent,
   #getToKnowMe {
-    background-color: #f2d5bb;
+    background-color: rgba(242, 213, 187, 0.75);
+    border-radius: 1rem;
   }
   #headshot {
     max-width: 25%;
@@ -199,5 +200,14 @@ footer span {
   }
   .navbar-brand {
     display: none;
+  }
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-pill {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
   }
 }
