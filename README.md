@@ -12,26 +12,31 @@ Thanks for taking a look!
 
 # Technology
 
--   HTML
--   CSS
--   Bootstrap
--   JavaScript
--   jQuery
--   Animate.css
--   Node.js
--   Express
--   EJS
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- jQuery
+- Animate.css
+- Node.js
+- Express
+- EJS
 
 # Screenshots
+
+![landing page](./public/img/ss-landing.png)
+![bio](./public/img/ss-bio.png)
+![stack](./public/img/ss-stack.png)
+![portfolio](./public/img/ss-portfolio.png)
 
 # Reach out to me!
 
 Feel free to get in touch:
 
--   <markdcross@gmail.com>
--   [LinkedIn](https://www.linkedin.com/in/markdcross/)
--   [GitHub](https://github.com/markdcross)  
-    Cover Photo by Z S on Unsplash 
+- <markdcross@gmail.com>
+- [LinkedIn](https://www.linkedin.com/in/markdcross/)
+- [GitHub](https://github.com/markdcross)  
+  Cover Photo by Z S on Unsplash
 
 # License
 
