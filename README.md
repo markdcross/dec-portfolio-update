@@ -2,7 +2,7 @@
 
 This page will be frequently updated as I continue to grow as a developer - check back frequently!
 
-It currently features an clear, clean, and engaging experience with intuitive navigation. It contains a short bio, my tech stack, and (coming soon...) some information about what I'm currently brewing.
+It currently features a clear, clean, and engaging experience with intuitive navigation. It contains a short bio and my tech stack.
 
 The second page is my portfolio, including links to the deployed app and repo of a few of my recent projects.
 
@@ -31,7 +31,7 @@ Feel free to get in touch:
 -   <markdcross@gmail.com>
 -   [LinkedIn](https://www.linkedin.com/in/markdcross/)
 -   [GitHub](https://github.com/markdcross)  
-    Cover Photo by Jesus Kiteque on Unsplash 
+    Cover Photo by Z S on Unsplash 
 
 # License
 
