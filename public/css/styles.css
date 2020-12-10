@@ -9,16 +9,6 @@
 .credits {
   text-align: center;
 }
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #2a4bad;
-}
-
-/* .calendly {
-
-} */
 
 /* Custom default button */
 .btn-secondary,
@@ -166,16 +156,14 @@ footer span {
   box-shadow: inset 0 0 5rem #f2d5bb;
   border: 1px solid #f2d5bb;
 }
-.card img {
-  max-width: 100%;
-  height: 10rem;
-}
 
 .card-text a {
   color: #000426;
 }
-
-#portContainer {
+.card-footer {
+  text-align: center;
+}
+.portContainer {
   margin-top: 2rem;
 }
 
@@ -190,7 +178,8 @@ footer span {
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   #introContent,
-  #getToKnowMe {
+  #getToKnowMe,
+  #stackDiv {
     background-color: rgba(242, 213, 187, 0.75);
     border-radius: 1rem;
   }
@@ -209,5 +198,8 @@ footer span {
     width: 100%;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
+  }
+  .card img {
+    min-width: 10rem;
   }
 }
