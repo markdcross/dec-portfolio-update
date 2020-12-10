@@ -203,4 +203,7 @@ footer span {
   .card img {
     min-width: 10rem;
   }
+  #imMark {
+    font-size: 4rem;
+  }
 }

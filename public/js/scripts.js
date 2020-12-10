@@ -23,9 +23,17 @@ $(document).ready(function () {
   //* =============================
   //* Index
   //* =============================
-  // Intro animation timing
-  setTimeout(introduce, 2000);
-  setTimeout(getToKnow, 4000);
+  if (window.innerWidth > 768) {
+    // Intro animation timing
+    setTimeout(introduce, 2000);
+    setTimeout(getToKnow, 4000);
+  }
+
+  if (window.innerWidth < 768) {
+    // Intro animation timing
+    setTimeout(introduceMobile, 2000);
+    setTimeout(getToKnowMobile, 4000);
+  }
 
   // Index footer-nav click events
   $('#introBtn').click(function () {
@@ -59,6 +67,16 @@ $(document).ready(function () {
   }
 
   function getToKnow() {
+    $('#getToKnowMe').animate({ opacity: 1 }, 1000);
+  }
+
+  function introduceMobile() {
+    $('#imMark').animate({ fontSize: '4rem' }, 1000);
+    $('#subHeading').animate({ opacity: 1 }, 1000);
+    $('.heroIndex').animate({ opacity: 1 }, 1000);
+  }
+
+  function getToKnowMobile() {
     $('#getToKnowMe').animate({ opacity: 1 }, 1000);
   }
 
