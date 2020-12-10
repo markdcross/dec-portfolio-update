@@ -36,10 +36,6 @@ html {
   height: 100%;
 }
 
-/* -------------------
-* index
-------------------- */
-
 .indexTabs {
   max-width: 76em;
 }
@@ -74,7 +70,7 @@ html {
 .ctcLinks {
   margin-left: 1.5rem;
   font-size: 1.5rem;
-  color: #000426;
+  color: #163840;
 }
 
 /* Cover */
