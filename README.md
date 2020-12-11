@@ -21,6 +21,7 @@ Thanks for taking a look!
 - Node.js
 - Express
 - EJS
+- Digital Ocean
 
 # Screenshots
 
