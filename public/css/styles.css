@@ -71,7 +71,9 @@ html {
 .inner {
   font-size: 1rem;
 }
-
+.calendly {
+  color: blue;
+}
 .ctcLinks {
   margin-left: 1.5rem;
   font-size: 1.5rem;
