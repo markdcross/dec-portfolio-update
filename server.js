@@ -5,6 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const compression = require('compression');
 const app = express();
 
 //* =================================
@@ -18,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // Set static folder
 app.use(express.static(process.cwd() + '/public'));
-
+app.use(compression());
 require('./routes/index')(app);
 
 const PORT = process.env.PORT || 4040;
