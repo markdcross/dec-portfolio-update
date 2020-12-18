@@ -12,9 +12,9 @@ const FILES_TO_CACHE = [
   '/img/perspektiv.png',
   '/js/scripts.js',
   '/css/styles.css',
-  '/css/bootstrap.min.css',
-  '../views/pages/index.ejs',
-  '../views/pages/portfolio.ejs'
+  '/css/bootstrap.min.css'
+  // '../views/pages/index.ejs',
+  // '../views/pages/portfolio.ejs'
   // '../views/pages/partials/bio.ejs',
   // '../views/pages/partials/brewing.ejs',
   // '../views/pages/partials/ctcLinks.ejs',
